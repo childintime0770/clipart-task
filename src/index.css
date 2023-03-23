@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: firaGo, sans-serif;
+}
+
+.burger-menu:hover .dropdown{
+    display: block;
+}
+
+.slider-container [class^="swiper-button-"] {
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+}
+
+
+@media (min-width: 1024px) {
+    .slider-container [class="swiper-button-prev"] {
+        top: 58px;
+        left: 37px;
+    }
+    .slider-container [class="swiper-button-next"] {
+        top: 58px;
+        left: 123px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .slider-container [class="swiper-button-prev"] {
+        background-color: initial;
+        top: auto;
+        bottom: 36px;
+        left: 37px;
+    }
+    .slider-container [class="swiper-button-next"] {
+        background-color: initial;
+        top: auto;
+        bottom: 36px;
+        left: 123px;
+    }
+    .card-1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
+
+.slider-container [class^="swiper-button-"]::after{
+    content: "";
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-contaier:hover .dropdown {
+    display: block;
+}

@@ -6,7 +6,7 @@
     font-family: firaGo, sans-serif;
 }
 
-.burger-menu:hover .dropdown{
+.burger-menu:hover .dropdown-menu{
     display: block;
 }
 
